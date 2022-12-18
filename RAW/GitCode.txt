@@ -1,8 +1,9 @@
-Create your own branch using
-git checkout -b <user>/<USER STORY>
-Do Code Changes
-Push the code 
-git add --all
-git commit -m “<message specific to the commit>”
-git push origin <user>/<USER STORY>
-Create a pull request on github web app
+git init
+git add .
+git commit -m "msg"
+git remote add origin git@github.com:Innowevae/AndroidLearning/Anshul.git
+git push -u origin Anshul
+git push
+
+
+
