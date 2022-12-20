@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    android:gravity="center_horizontal">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calculate your"
+        android:textColor="@color/textblue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:autoSizeTextType="uniform"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="AGE"
+        android:padding="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="in Minutes"
+        android:textColor="@color/textblue"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:autoSizeTextType="uniform"
+        />
+
+    <Button
+        android:id="@+id/mybutton"
+        android:layout_width="248dp"
+        android:layout_height="69dp"
+        android:text="Select Date"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat"
+        android:id="@+id/tvdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="31.05.1999"
+        android:textColor="@color/textblue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:autoSizeTextType="uniform"
+        />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Selected Date"
+        android:textColor="@color/textblue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:autoSizeTextType="uniform"
+        />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat"
+        android:id="@+id/tvmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="400000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/purple_700"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Minutes"
+        android:textColor="@color/textblue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:autoSizeTextType="uniform"
+        />
+</LinearLayout>
