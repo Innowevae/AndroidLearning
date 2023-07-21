@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+///////////////////////////////////////////////////
+//                                               //
+// Copyright 2022-2023                           //
+// Notice: Property of Innoweave Biocare         //
+// Any part of this code cannot be copied or     //
+// redistributed without prior consent of        //
+// Innoweave                                     //
+//                                               //
+///////////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+// File Name: activity_home.xml
+// File Description: It has fab button for adding
+// devices, recycler view for showing devices data
+// and menu bar for logout and range notification
+// Author: Anshul Malviya
+// Date: April 10, 2023
+///////////////////////////////////////////////////
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    tools:context=".HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:logo="@drawable/ic_logo"
+        app:menu="@menu/item_menu_for_home_activity"
+        app:title="MATSYA"
+        app:titleMarginStart="25dp"
+        app:titleTextColor="@color/black" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:id="@+id/swipeRefresh">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:clipToPadding="false" />
+
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_plus"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini"
+            app:maxImageSize="16dp"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/appCarouselDataCardSample"
+            android:layout_width="wrap_content"
+            android:layout_height="212dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/ic_datacard"
+            android:visibility="invisible"
+            />
+
+    </FrameLayout>
+</RelativeLayout>

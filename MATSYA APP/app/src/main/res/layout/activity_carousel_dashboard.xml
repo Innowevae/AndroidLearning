@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+///////////////////////////////////////////////////
+//                                               //
+// Copyright 2022-2023                           //
+// Notice: Property of Innoweave Biocare         //
+// Any part of this code cannot be copied or     //
+// redistributed without prior consent of        //
+// Innoweave                                     //
+//                                               //
+///////////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+// File Name: activity_carousel_dashboard.xml
+// File Description: this activity is for walkthrough
+// Author: Ritvik Sahu
+// Date: June 7, 2023
+///////////////////////////////////////////////////
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarouselDashboardActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/pseudo_my_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintBottom_toTopOf="@+id/pseudo_llbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@drawable/ic_left_arrow"
+        app:menu="@menu/item_menu_for_dashboard"
+        app:title="Nagpur"
+        app:titleMarginStart="25dp"
+        app:titleTextColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/pseudo_llbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pseudo_my_toolbar1"
+        android:layout_marginBottom="15dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/pseudo_tvToday"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_clicked"
+            android:gravity="center"
+            android:text="Today"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/pseudo_tv7days"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="7 days"
+            android:background="@drawable/shape_rectangle"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            />
+        <TextView
+            android:id="@+id/pseudo_tv30days"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="30 days"
+            android:background="@drawable/shape_rectangle"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            />
+        <TextView
+            android:id="@+id/pseudo_tv90days"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="90 days"
+            android:background="@drawable/shape_rectangle"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            />
+        <TextView
+            android:id="@+id/pseudo_tvExport"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Export"
+            android:background="@drawable/shape_rectangle"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardViewGraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/pseudo_llbutton"
+        android:elevation="20dp"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/pseudo_tvHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Dissolved Oxygen"
+                android:textColor="#5D5D5D"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvMinhead"
+                />
+            <ProgressBar
+                android:id="@+id/pseudo_tvProgressBar"
+                style="@style/CircularDeterminateProgressBar"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:indeterminateOnly="false"
+                android:progressDrawable="@drawable/circular_shape"
+                android:layout_marginBottom="55dp"
+                android:layout_marginEnd="10dp"
+                android:progress="56"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvGraph"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <TextView
+                android:id="@+id/pseudo_tvProgressText"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="5.6"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/pseudo_tvProgressBar"
+                app:layout_constraintEnd_toEndOf="@+id/pseudo_tvProgressBar"
+                app:layout_constraintStart_toStartOf="@id/pseudo_tvProgressBar"
+                app:layout_constraintTop_toTopOf="@id/pseudo_tvProgressBar"
+                />
+            <TextView
+                android:id="@+id/pseudo_tvUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mg/L"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/pseudo_tvProgressBar"
+                app:layout_constraintEnd_toEndOf="@+id/pseudo_tvProgressBar"
+                app:layout_constraintStart_toStartOf="@+id/pseudo_tvProgressBar"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvProgressText"
+                />
+            <TextView
+                android:id="@+id/pseudo_tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="Jun 03,2023"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvProgressBar"
+                app:layout_constraintStart_toStartOf="@id/pseudo_tvProgressBar"
+                app:layout_constraintEnd_toEndOf="@+id/pseudo_tvProgressBar"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvTime" />
+
+            <TextView
+                android:id="@+id/pseudo_tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="04:26 am"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvDate"
+                app:layout_constraintStart_toStartOf="@id/pseudo_tvProgressBar"
+                app:layout_constraintEnd_toEndOf="@+id/pseudo_tvProgressBar"
+
+                />
+
+            <TextView
+                android:id="@+id/pseudo_tvMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="4.5"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvMinhead"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvMinDate"
+                />
+            <TextView
+                android:id="@+id/pseudo_tvMinUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mg/dl"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvMinhead"
+                app:layout_constraintStart_toEndOf="@id/pseudo_tvMin"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvMinDate"
+                />
+            <TextView
+                android:id="@+id/pseudo_tvMinDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="June 02,2023"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvMin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvMaxhead" />
+            <TextView
+                android:id="@+id/pseudo_tvMinTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:gravity="center"
+                android:text="16:32 pm"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvMin"
+                app:layout_constraintStart_toEndOf="@id/pseudo_tvMinDate"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvMaxhead"
+                />
+            <TextView
+                android:id="@+id/pseudo_tvMinhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Minimum "
+                android:textColor="#808080"
+                android:textSize="15dp"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvHead"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvMin"
+                />
+            <TextView
+                android:id="@+id/pseudo_tvMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="29.67"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvMaxhead"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvMaxDate"
+                />
+            <TextView
+                android:id="@+id/pseudo_tvMaxUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mg/dl"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvMaxhead"
+                app:layout_constraintStart_toEndOf="@id/pseudo_tvMax"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvMaxDate"
+                />
+            <TextView
+                android:id="@+id/pseudo_tvMaxDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="June 02,2023"
+                android:textStyle="bold"
+                android:background="@drawable/textview_border"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvMax"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvGraph"
+                />
+            <TextView
+                android:id="@+id/pseudo_tvMaxTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:05 am"
+                android:textStyle="bold"
+                android:background="@drawable/textview_border"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvMax"
+                app:layout_constraintStart_toEndOf="@id/pseudo_tvMaxDate"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvGraph"
+                />
+            <TextView
+                android:id="@+id/pseudo_tvMaxhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Maximum "
+                android:textColor="#808080"
+                android:textSize="15dp"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvMinDate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/pseudo_tvMax"
+                />
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/pseudo_tvGraph"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/pseudo_tvMaxDate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
