@@ -4,24 +4,10 @@ on:
     branches: [Anshul]
   pull_request:
     branches: [Anshul]
-# jobs:
-#   lint:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout the code
-#         uses: actions/checkout@v2
-
-#       - name: Upload html test report
-#         uses: actions/upload-artifact@v2
-#         with:
-#           name: lint.html
-#           path: app/build/reports/lint-results-debug.html
 jobs:
-  build:
-  
-  runs-on: ubuntu-latest
-  
-  steps:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
     - uses: actions/checkout@v1
 
     - name: Set Up JDK
