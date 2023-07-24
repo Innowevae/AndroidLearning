@@ -1,4 +1,4 @@
-name: MATSYA_ANDROID_CI
+name: MATSYA_ANDROID_CI_NEW
 on:
   push:
     branches: [Anshul]
