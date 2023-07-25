@@ -1,0 +1,136 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateAddress {
+  onCreateAddress {
+    _deleted
+    _lastChangedAt
+    _version
+    address
+    createdAt
+    id
+    updatedAt
+  }
+}
+subscription OnCreateMATSYADATA {
+  onCreateMATSYADATA {
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    payload
+    timeStamp
+    updatedAt
+  }
+}
+subscription OnCreateUser {
+  onCreateUser {
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    name
+    owner
+    updatedAt
+  }
+}
+subscription OnDeleteAddress {
+  onDeleteAddress {
+    _deleted
+    _lastChangedAt
+    _version
+    address
+    createdAt
+    id
+    updatedAt
+  }
+}
+subscription OnDeleteMATSYADATA {
+  onDeleteMATSYADATA {
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    payload
+    timeStamp
+    updatedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    name
+    owner
+    updatedAt
+  }
+}
+subscription OnUpdateAddress {
+  onUpdateAddress {
+    _deleted
+    _lastChangedAt
+    _version
+    address
+    createdAt
+    id
+    updatedAt
+  }
+}
+subscription OnUpdateMATSYADATA {
+  onUpdateMATSYADATA {
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    payload
+    timeStamp
+    updatedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    name
+    owner
+    updatedAt
+  }
+}
+subscription OnCreateMATSYAR1TELEMETRYDATA(
+  $DEVICE_ID: String
+  $timeStamp: Float
+) {
+  onCreateMATSYAR1TELEMETRYDATA(DEVICE_ID: $DEVICE_ID, timeStamp: $timeStamp) {
+    DEVICE_ID
+    timeStamp
+    payload
+  }
+}
+subscription OnUpdateMATSYAR1TELEMETRYDATA(
+  $DEVICE_ID: String
+  $timeStamp: Float
+) {
+  onUpdateMATSYAR1TELEMETRYDATA(DEVICE_ID: $DEVICE_ID, timeStamp: $timeStamp) {
+    DEVICE_ID
+    timeStamp
+    payload
+  }
+}
+subscription OnDeleteMATSYAR1TELEMETRYDATA(
+  $DEVICE_ID: String
+  $timeStamp: Float
+) {
+  onDeleteMATSYAR1TELEMETRYDATA(DEVICE_ID: $DEVICE_ID, timeStamp: $timeStamp) {
+    DEVICE_ID
+    timeStamp
+    payload
+  }
+}

@@ -1,0 +1,160 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateAddress(
+  $condition: ModelAddressConditionInput
+  $input: CreateAddressInput!
+) {
+  createAddress(condition: $condition, input: $input) {
+    _deleted
+    _lastChangedAt
+    _version
+    address
+    createdAt
+    id
+    updatedAt
+  }
+}
+mutation CreateMATSYADATA(
+  $condition: ModelMATSYADATAConditionInput
+  $input: CreateMATSYADATAInput!
+) {
+  createMATSYADATA(condition: $condition, input: $input) {
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    payload
+    timeStamp
+    updatedAt
+  }
+}
+mutation CreateUser(
+  $condition: ModelUserConditionInput
+  $input: CreateUserInput!
+) {
+  createUser(condition: $condition, input: $input) {
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    name
+    owner
+    updatedAt
+  }
+}
+mutation DeleteAddress(
+  $condition: ModelAddressConditionInput
+  $input: DeleteAddressInput!
+) {
+  deleteAddress(condition: $condition, input: $input) {
+    _deleted
+    _lastChangedAt
+    _version
+    address
+    createdAt
+    id
+    updatedAt
+  }
+}
+mutation DeleteMATSYADATA(
+  $condition: ModelMATSYADATAConditionInput
+  $input: DeleteMATSYADATAInput!
+) {
+  deleteMATSYADATA(condition: $condition, input: $input) {
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    payload
+    timeStamp
+    updatedAt
+  }
+}
+mutation DeleteUser(
+  $condition: ModelUserConditionInput
+  $input: DeleteUserInput!
+) {
+  deleteUser(condition: $condition, input: $input) {
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    name
+    owner
+    updatedAt
+  }
+}
+mutation UpdateAddress(
+  $condition: ModelAddressConditionInput
+  $input: UpdateAddressInput!
+) {
+  updateAddress(condition: $condition, input: $input) {
+    _deleted
+    _lastChangedAt
+    _version
+    address
+    createdAt
+    id
+    updatedAt
+  }
+}
+mutation UpdateMATSYADATA(
+  $condition: ModelMATSYADATAConditionInput
+  $input: UpdateMATSYADATAInput!
+) {
+  updateMATSYADATA(condition: $condition, input: $input) {
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    payload
+    timeStamp
+    updatedAt
+  }
+}
+mutation UpdateUser(
+  $condition: ModelUserConditionInput
+  $input: UpdateUserInput!
+) {
+  updateUser(condition: $condition, input: $input) {
+    _deleted
+    _lastChangedAt
+    _version
+    createdAt
+    id
+    name
+    owner
+    updatedAt
+  }
+}
+mutation CreateMATSYAR1TELEMETRYDATA(
+  $input: CreateMATSYAR1TELEMETRYDATAInput!
+) {
+  createMATSYAR1TELEMETRYDATA(input: $input) {
+    DEVICE_ID
+    timeStamp
+    payload
+  }
+}
+mutation UpdateMATSYAR1TELEMETRYDATA(
+  $input: UpdateMATSYAR1TELEMETRYDATAInput!
+) {
+  updateMATSYAR1TELEMETRYDATA(input: $input) {
+    DEVICE_ID
+    timeStamp
+    payload
+  }
+}
+mutation DeleteMATSYAR1TELEMETRYDATA(
+  $input: DeleteMATSYAR1TELEMETRYDATAInput!
+) {
+  deleteMATSYAR1TELEMETRYDATA(input: $input) {
+    DEVICE_ID
+    timeStamp
+    payload
+  }
+}
