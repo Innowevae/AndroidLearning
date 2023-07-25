@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MATSYA</string>
+    <string name="Login">Login</string>
+    <string name="Password">Password</string>
+    <string name="RepeatPassword">Repeat Password</string>
+    <string name="Mobile">Mobile</string>
+    <string name="Email">Email</string>
+    <string name="Username">Username</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="HaveConfCode">Already Have Confirmation Code?</string>
+    <string name="ConfCode">Enter Confirmation Code Here</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Verify">Verify</string>
+    <string name="NotAccount">Don\'t have account?</string>
+    <string name="ForgetPass">Forget Your Password?</string>
+    <string name="AgreeTerms">Agree to the Terms and Conditions</string>
+    <string name="deviceID">Device ID</string>
+    <string name="sensorDataT">T: 29<sup>o</sup> C</string>
+    <string name="sensorDatapH">pH: 7 C</string>
+    <string name="sensorDataDO">DO: 90%</string>
+    <string name="sensorDataTDS">TDS: 100</string>
+    <string name="InnoweaveBiocare"> Innoweave Biocare</string>
+    <string name="selectFarm">Select Farm</string>
+
+</resources>
