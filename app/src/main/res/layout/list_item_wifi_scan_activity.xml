@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+///////////////////////////////////////////////////
+//                                               //
+// Copyright 2022-2023                           //
+// Notice: Property of Innoweave Biocare         //
+// Any part of this code cannot be copied or     //
+// redistributed without prior consent of        //
+// Innoweave                                     //
+//                                               //
+///////////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+// File Name: item_adapter.xml
+// File Description: Adapter layout for wifi list
+// recyclerView.
+// Author: Anshul Malviya
+// Date: May 3, 2023
+///////////////////////////////////////////////////
+-->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp"
+    android:layout_margin="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="16dp"
+        tools:ignore="MissingConstraints"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wifi_black_24dp" />
+        <TextView
+            android:id="@+id/networkNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="18dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
