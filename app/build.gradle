@@ -1,0 +1,128 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace = "com.innoweavebiocare.matsya"
+    testNamespace = "com.innoweavebiocare.matsyatest"
+    defaultConfig {
+        applicationId "com.innoweavebiocare.matsya"
+        minSdk 26
+        targetSdk 28
+
+        def majorVersion = 1 // Major version for major changes
+        def minorVersion = 0 // Minor version for adding new functionality
+        def patchVersion = 0 // Patch version for bug fix
+
+        versionCode majorVersion * 10000 + minorVersion * 100 + patchVersion
+        versionName "${majorVersion}.${minorVersion}.${patchVersion}"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        // Support for Java 8 features
+        targetCompatibility = JavaVersion.VERSION_11
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = "11"
+        jvmTarget = '1.8'
+    }
+    compileSdk 33
+}
+configurations {
+    // Initializes a placeholder for the freeDebugRuntimeOnly dependency configuration.
+    freeDebugRuntimeOnly {}
+}
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
+    // Adding Work Dependency
+    implementation "androidx.work:work-runtime-ktx:2.7.1"
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-base:17.6.0'
+
+    // Adding Graphview Dependency
+    implementation 'com.jjoe64:graphview:4.2.2'
+    // Adding ViewModel Duplicate Class Resolution
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+    // Adding Amplify core, AWS Cognito, AWS API
+    implementation 'com.amplifyframework:core:1.37.2'
+    implementation 'com.amplifyframework:aws-api:1.37.3'
+    implementation 'com.amplifyframework:aws-auth-cognito:1.37.2'
+    implementation 'com.google.guava:guava:32.1.1-jre'
+    implementation 'com.google.guava:guava:32.1.1-jre'
+    // Support for Java 8 features
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    // Allow uses of GIFs as compound drawables and background.
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+    // Country code picker library
+    implementation 'com.hbb20:ccp:2.5.1'
+    // Library for QR scanner
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation "com.journeyapps:zxing-android-embedded:3.6.0"
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation "androidx.work:work-runtime-ktx:2.3.4"
+
+
+    var work_version = "2.8.1"
+    // (Java only)
+    implementation("androidx.work:work-runtime:$work_version")
+    // Kotlin + coroutines
+    implementation("androidx.work:work-runtime-ktx:$work_version")
+    // optional - RxJava2 support
+    implementation("androidx.work:work-rxjava2:$work_version")
+    // optional - GCMNetworkManager support
+    implementation("androidx.work:work-gcm:$work_version")
+    // optional - Test helpers
+    androidTestImplementation("androidx.work:work-testing:$work_version")
+    // optional - Multiprocess support
+    implementation "androidx.work:work-multiprocess:$work_version"
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation "com.journeyapps:zxing-android-embedded:3.6.0"
+    implementation 'com.android.support:multidex:2.0.1'
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation "com.google.android.gms:play-services-location:18.0.0"
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.android.volley:volley:1.2.1'
+
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.13.3'
+
+
+
+    implementation 'com.google.guava:guava:32.1.1-jre'
+    implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+    implementation("com.example.android:app-magic:12.3")
+    implementation group: 'com.example.android', name: 'app-magic', version: '12.3'
+    freeDebugRuntimeOnly fileTree(dir: 'libs', include: ['*.jar'])
+    // Adds a remote binary dependency only for local tests.
+
+    // Adds a remote binary dependency only for the instrumented test APK.
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

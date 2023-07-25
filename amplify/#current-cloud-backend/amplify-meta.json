@@ -1,0 +1,114 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-matsya-dev-113931-authRole",
+      "UnauthRoleArn": "arn:aws:iam::558900864100:role/amplify-matsya-dev-113931-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::558900864100:role/amplify-matsya-dev-113931-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-matsya-dev-113931-deployment",
+      "UnauthRoleName": "amplify-matsya-dev-113931-unauthRole",
+      "StackName": "amplify-matsya-dev-113931",
+      "StackId": "arn:aws:cloudformation:us-east-1:558900864100:stack/amplify-matsya-dev-113931/522a6140-282a-11ed-965c-0a481e8a9fe1",
+      "AmplifyAppId": "du2y1as979iad"
+    }
+  },
+  "auth": {
+    "Matsya": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "us-east-1_OwHuYxTZz",
+        "AppClientIDWeb": "2vijsqbf6d06j12omc18nl8e2l",
+        "AppClientID": "gct1fa4t5jhuu3u2p9mhb5uop",
+        "IdentityPoolId": "us-east-1:40740e21-2b11-44e8-9aa1-f74c2444fb2c",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:558900864100:userpool/us-east-1_OwHuYxTZz",
+        "IdentityPoolName": "testAuthIdentityPool__dev",
+        "UserPoolName": "Matsya"
+      },
+      "lastPushTimeStamp": "2023-03-27T09:39:37.107Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-matsya-dev-113931-deployment/amplify-cfn-templates/auth/Matsya-cloudformation-template.json",
+        "logicalId": "authMatsya"
+      },
+      "lastPushDirHash": "z7V02bWH2Yv/Bohir00lZ47shq0="
+    }
+  },
+  "storage": {},
+  "function": {
+    "MATSYAR1APIHANDLER": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2023-03-27T09:13:33.798Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2023-03-27T09:13:33.972Z",
+      "distZipFilename": "MATSYAR1APIHANDLER-474d6274346d414a4641-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-matsya-dev-113931-deployment",
+        "s3Key": "amplify-builds/MATSYAR1APIHANDLER-474d6274346d414a4641-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-matsya-dev-113931-deployment/amplify-cfn-templates/function/MATSYAR1APIHANDLER-cloudformation-template.json",
+        "logicalId": "functionMATSYAR1APIHANDLER"
+      },
+      "lastPushTimeStamp": "2023-03-27T09:39:37.111Z",
+      "output": {
+        "LambdaExecutionRoleArn": "arn:aws:iam::558900864100:role/matsyaLambdaRoledab12449-dev",
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:558900864100:function:MATSYAR1APIHANDLER-dev",
+        "Name": "MATSYAR1APIHANDLER-dev",
+        "LambdaExecutionRole": "matsyaLambdaRoledab12449-dev"
+      },
+      "lastPushDirHash": "xX2kFijH2h3y2DNv7KizCJIkBz8="
+    }
+  },
+  "api": {
+    "matsyaR1API": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "MATSYAR1APIHANDLER",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-matsya-dev-113931-deployment/amplify-cfn-templates/api/matsyaR1API-cloudformation-template.json",
+        "logicalId": "apimatsyaR1API"
+      },
+      "lastPushTimeStamp": "2023-03-27T09:39:38.594Z",
+      "output": {
+        "ApiName": "matsyaR1API",
+        "RootUrl": "https://tjcay3c4r9.execute-api.us-east-1.amazonaws.com/dev",
+        "ApiId": "tjcay3c4r9"
+      },
+      "lastPushDirHash": "7hRrjLMqoYEcDiI7sCa7i2OlYLE="
+    }
+  }
+}

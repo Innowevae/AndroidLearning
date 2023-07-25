@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/PRIYANKAR/My Drive/Entrepreneurship/8. IOT/Products/MATSYA_RELEASE_1/Software/MATSYA_AndroidApp/Matsya/app/src/main/res/layout/activity_confirm_user.xml" value="0.2171875" />
+        <entry key="..\:/Users/PRIYANKAR/My Drive/Entrepreneurship/8. IOT/Products/MATSYA_RELEASE_1/Software/MATSYA_AndroidApp/Matsya/app/src/main/res/layout/activity_login.xml" value="0.2171875" />
+        <entry key="..\:/Users/PRIYANKAR/My Drive/Entrepreneurship/8. IOT/Products/MATSYA_RELEASE_1/Software/MATSYA_AndroidApp/Matsya/app/src/main/res/layout/activity_main.xml" value="0.17255434782608695" />
+        <entry key="..\:/Users/PRIYANKAR/My Drive/Entrepreneurship/8. IOT/Products/MATSYA_RELEASE_1/Software/MATSYA_AndroidApp/Matsya/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="..\:/Users/PRIYANKAR/My Drive/Entrepreneurship/8. IOT/Products/MATSYA_RELEASE_1/Software/Matsya/app/src/main/res/layout/activity_login.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/PRIYANKAR/My Drive/Entrepreneurship/8. IOT/Products/MATSYA_RELEASE_1/Software/Matsya/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/PRIYANKAR/My Drive/Entrepreneurship/8. IOT/Products/MATSYA_RELEASE_1/Software/Matsya/app/src/main/res/layout/activity_sign_up.xml" value="0.14130434782608695" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
