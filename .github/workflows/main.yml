@@ -22,7 +22,7 @@ jobs:
         run: chmod +x ./gradlew
  
       - name: Build with Gradle
-        run: ./gradlew --stacktrace --info --debug --scan build
+        run: ./gradlew build
 
       - name: Build debug APK
         run: ./gradlew clean assembleDebug
