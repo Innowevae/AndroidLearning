@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        distribution: [ 'zulu', 'temurin' ]
-        java: [ '8', '11' ]
+        distribution: [ 'temurin' ]
+        java: [ '11' ]
     name: Java ${{ matrix.Java }} (${{ matrix.distribution }}) sample
     steps:
       - uses: actions/checkout@v3
