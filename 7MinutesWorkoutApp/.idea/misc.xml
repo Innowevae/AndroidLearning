@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable-anydpi/ic_action_done.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable/circular_progress_bar.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable/circular_progress_gray.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable/drawable_radio_group_tab_background.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable/drawable_units_tab_selector.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable/drawable_units_tab_text_color_selector.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable/item_circular_color_accent_background.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable/item_circular_color_gray_background.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable/item_circular_thin_color_accent_border.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/drawable/item_color_accent_border_ripple_background.xml" value="0.15648148148148147" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/layout/activity_bmi.xml" value="0.25" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/layout/activity_exercise.xml" value="0.4" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/layout/activity_finish.xml" value="0.25" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/layout/activity_history.xml" value="0.25" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/layout/dialog_custom_back_confirmation.xml" value="0.25" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/layout/item_exercise_status.xml" value="0.25" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/layout/item_history_row.xml" value="0.25" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/anshu/Desktop/INNOWEAVE/7MinutesWorkoutApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26614583333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

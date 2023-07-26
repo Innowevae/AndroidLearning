@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Edittext for getting user email address-->
+    <!--input type is set to email-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEmail"
+        android:hint="Enter Your Email"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no" />
+
+
+    <!--Edittext for getting user password-->
+    <!--input type is set to password-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/etPassword"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:importantForAutofill="no" />
+
+    <!--button to continue to login-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="30dp"
+        android:text="login"
+        android:id="@+id/idBtnLogin"
+        />
+
+</RelativeLayout>

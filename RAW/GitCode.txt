@@ -1,0 +1,99 @@
+Create your own branch using
+git checkout -b <user>/<USER STORY>
+Do Code Changes
+Push the code 
+git add --all
+git commit -m “<message specific to the commit>”
+git push origin <user>/<USER STORY>
+Create a pull request on github web app
+
+
+
+
+//PR
+
+$ git checkout
+Your branch is up to date with 'origin/MATSYA_RELEASE_1'.
+
+$ git checkout AnshulM/RemoveGraph
+Switched to branch 'AnshulM/RemoveGraph'
+Your branch is up to date with 'origin/AnshulM/RemoveGraph'.
+
+$ git status
+On branch AnshulM/RemoveGraph
+Your branch is up to date with 'origin/AnshulM/RemoveGraph'.
+nothing to commit, working tree clean
+
+
+$ git pull origin MATSYA_RELEASE_1
+From https://github.com/Innowevae/MATSYA_WebApp
+ * branch            MATSYA_RELEASE_1 -> FETCH_HEAD
+CONFLICT (add/add): Merge conflict in matsya.local/assets/sass/bas
+Auto-merging matsya.local/assets/sass/base/_bg.scss
+CONFLICT (add/add): Merge conflict in matsya.local/assets/css/home
+Auto-merging matsya.local/assets/css/home_main.css
+CONFLICT (add/add): Merge conflict in matsya.local/admin/src/style
+Auto-merging matsya.local/admin/src/styles/index.css
+CONFLICT (add/add): Merge conflict in matsya.local/admin/index.htm
+Auto-merging matsya.local/admin/index.html
+CONFLICT (add/add): Merge conflict in matsya.local/admin/assets/sa
+Auto-merging matsya.local/admin/assets/sass/base/_bg.scss
+CONFLICT (add/add): Merge conflict in matsya.local/admin/assets/cs
+Auto-merging matsya.local/admin/assets/css/home_main.css
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+
+//change your code
+
+
+
+$ git status
+On branch AnshulM/RemoveGraph
+Your branch is up to date with 'origin/AnshulM/RemoveGraph'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   HTML_CSS_Templates/eclipse/.gitignore
+        new file:   HTML_CSS_Templates/eclipse/__MACOSX/._.gitigno
+        new file:   HTML_CSS_Templates/eclipse/__MACOSX/._about.ht
+        new file:   HTML_CSS_Templates/eclipse/__MACOSX/._blog-hom
+        new file:   HTML_CSS_Templates/eclipse/__MACOSX/._blog-sin
+        new file:   HTML_CSS_Templates/eclipse/__MACOSX/._contacts
+        new file:   HTML_CSS_Templates/eclipse/__MACOSX/._course-d
+        new file:   HTML_CSS_Templates/eclipse/__MACOSX/._courses.
+        new file:   HTML_CSS_Templates/eclipse/__MACOSX/._elements
+        new file:   HTML_CSS_Templates/eclipse/__MACOSX/._index.ht
+        new file:   HTML_CSS_Templates/eclipse/__MACOSX/._mail.php
+      
+//changes file
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      matsya.local/admin/assets/css/home_main.c
+        both added:      matsya.local/admin/assets/sass/base/_bg.s
+        both added:      matsya.local/admin/index.html
+        both added:      matsya.local/admin/src/styles/index.css
+        both added:      matsya.local/assets/css/home_main.css
+        both added:      matsya.local/assets/sass/base/_bg.scss
+
+
+
+$ git add --all
+
+$ git commit -m "Update"
+[AnshulM/RemoveGraph 485b255] Update
+
+$ git push origin AnshulM/RemoveGraph
+Enumerating objects: 51, done.
+Counting objects: 100% (51/51), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (19/19), 1.80 KiB | 460.00 KiB/s, done.
+Total 19 (delta 12), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (12/12), completed with 11 local ob
+To https://github.com/Innowevae/MATSYA_WebApp.git
+   86a53fc..485b255  AnshulM/RemoveGraph -> AnshulM/RemoveGraph
